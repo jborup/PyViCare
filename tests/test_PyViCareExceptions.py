@@ -1,6 +1,6 @@
 import unittest
 import datetime
-from PyViCare.PyViCareUtils import PyViCareRateLimitError, PyViCareRateLimitError, PyViCareCommandError
+from PyViCare.PyViCareUtils import PyViCareRateLimitError, PyViCareCommandError
 from tests.helper import readJson
 
 
@@ -25,4 +25,3 @@ class TestPyViCareCommandError(unittest.TestCase):
 
         self.assertEqual(
             error.message, 'Command failed with status code 502. Reason given was: INTERNAL_SERVER_ERROR')
-
